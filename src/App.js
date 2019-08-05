@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Axios from 'axios';
+import styled from 'styled-components';
 import ImageTitle from './components/ImageTitle';
 import ImageDisplay from './components/ImageDisplay';
 import ImageInfo from './components/ImageInfo';
@@ -25,12 +26,10 @@ function App() {
 
   return (
     <div className='App'>
-      
       <ImageTitle nasaData={nasaData} />
-      <ImageDisplay nasaData={nasaData}/>
       <ImageInfo nasaData={nasaData} />
+      <ImageDisplay nasaData={nasaData} />
       <ImageDescription nasaData={nasaData} />
-      
     </div>
   );
 }
